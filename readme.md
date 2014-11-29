@@ -24,8 +24,25 @@ Feel free to make any changes to the UpdateQuality method and add any new code a
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
 
+Object Calisthenics
+-------------------
+
+For an additional fun while sharpening your code craftmanship, you are recommended to follow the rules of Object Calisthenics, originally proposed by Jeff Bay of ThoughtWorks Anthology. The rules are devised to help you push your code into good object-oriented design. Those rules are:
+
+1. One level of indentation per method
+2. Don’t use the ELSE keyword
+3. Wrap all primitives and Strings
+4. First class collections
+5. One dot per line
+6. Don’t abbreviate
+7. Keep all entities small
+8. No classes with more than two instance variables
+9. No getters/setters/properties
+
+William Durand gave an excellent discourse about each of the above rule in http://williamdurand.fr/2013/06/03/object-calisthenics/
+
 Credits
 -------
 
 * written by [Terry Hughes](https://twitter.com/TerryHughes)
-* forked from [https://github.com/wouterla/GildedRose](https://github.com/wouterla/GildedRose) with slight modification of the package rules
+* forked from [https://github.com/wouterla/GildedRose](https://github.com/wouterla/GildedRose) with slight modification of the package rules and the addition of the Object Calisthenics section
