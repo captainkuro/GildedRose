@@ -1,4 +1,6 @@
 public class Conjured implements ItemUpdater {
+    public static final String NAME = "Conjured Mana Cake";
+
     protected Item item;
 
     public Conjured(Item item) {

@@ -1,4 +1,6 @@
 public class AgedBrie implements ItemUpdater {
+    public static final String NAME = "Aged Brie";
+
     protected Item item;
 
     public AgedBrie(Item item) {
@@ -12,10 +14,8 @@ public class AgedBrie implements ItemUpdater {
 
         item.setSellIn(item.getSellIn() - 1);
 
-        if (item.getSellIn() < 0) {
-            if (item.getQuality() < 50) {
-                item.setQuality(item.getQuality() + 1);
-            }
+        if (item.getSellIn() < 0 && item.getQuality() < 50) {
+            item.setQuality(item.getQuality() + 1);
         }
     }
 }

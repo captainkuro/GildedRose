@@ -1,4 +1,6 @@
 public class BackstagePasses implements ItemUpdater {
+    public static final String NAME = "Backstage passes to a TAFKAL80ETC concert";
+
     protected Item item;
 
     public BackstagePasses(Item item) {
@@ -9,16 +11,12 @@ public class BackstagePasses implements ItemUpdater {
         if (item.getQuality() < 50) {
             item.setQuality(item.getQuality() + 1);
 
-            if (item.getSellIn() < 11) {
-                if (item.getQuality() < 50) {
-                    item.setQuality(item.getQuality() + 1);
-                }
+            if (item.getSellIn() < 11 && item.getQuality() < 50) {
+                item.setQuality(item.getQuality() + 1);
             }
 
-            if (item.getSellIn() < 6) {
-                if (item.getQuality() < 50) {
-                    item.setQuality(item.getQuality() + 1);
-                }
+            if (item.getSellIn() < 6 && item.getQuality() < 50) {
+                item.setQuality(item.getQuality() + 1);
             }
         }
 
